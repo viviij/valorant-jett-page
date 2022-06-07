@@ -24,23 +24,29 @@ export const Information = styled.p`
 
 export const Abilities = styled.div`
   display: flex;
+  .ability {
+      
+      
+      display: grid;
+      grid-template-columns: repeat(1fr, 4);
+      gap: 2rem;
+    }
 
   div {
     z-index: 1;
     -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.48); 
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.48);
-    top: -230px;
+    
     font-size: 0.8rem;
-    position: relative;
-    display: grid;
-
-    grid-template-columns: repeat(1fr, 1);
+    
+    
     border-right: 1px solid rgba(255, 70, 86, 1);
     align-content: flex-start;
-
+    
     color: var(--white);
     background: var(--header-color);
     padding: 1rem 3rem 0 2rem;
+    
     header {
       
       img {

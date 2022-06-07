@@ -5,7 +5,7 @@ export const Container = styled.body`
   position: absolute;
 
   width: 700px;
-  height: 650px;
+  height: 350px;
   
   margin: 96px 0 48px 80px;
 
@@ -41,70 +41,54 @@ export const Container = styled.body`
   
   body {
     position: absolute;
-
-    
-
     .pato {
       -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.48); 
       box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.48);
       background: var(--background-details-color);
-    }
-    
-    h1 {
-      font-family: 'Montserrat', sans-serif;
-      height: 700;
-      font-size: 0.77rem;
-      margin: 1rem 0 1rem 4.5rem;
-    }
 
-    >p{
-      font-family: 'Montserrat', sans-serif;
-      height: 500;
-      font-size: 0.7rem;
-      margin: 1rem 4.5rem;
-    }
-
-    .agents {
-      .image {
-        z-index: 2;
-        position: relative;
-        left:-50px;
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        height: 700;
+        font-size: 0.77rem;
+  
       }
 
+      >p{
+        font-family: 'Montserrat', sans-serif;
+        height: 500;
+        font-size: 0.7rem;
+        margin: 1rem 4.5rem;
+      }
+      
       .agentInfo {
+        display: flex;
+        .image {
+          z-index: 2;
+          position: relative;
+          left:-50px;
+        }
         h1 {
           font-family: 'Montserrat', sans-serif;
           height: 700;
           font-size: 1rem;
           color: rgba(31, 35, 38, 1);
-          position:relative;
-
-          top: -250px;
-          left: 222px;         
-          padding: 1rem 5rem 4rem 5.9rem;
+          
         }
-
+  
         .information {
-          display: flex;
-          position: relative;
-          top: -280px;
-          left: 309px;
-          margin: 1rem 1rem 1rem 5rem;
+  
 
-          margin-right: 1rem;
-
+  
         }
       }
-
     }
-
 
   }
 
   @media (max-width: 600px) {
     margin: 6rem 1rem 2rem 5rem;
     width: 300px;
-    height: 700px;
+
     position: absolute;
     .Jett, .jettLogo {
       display: none;
