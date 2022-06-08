@@ -40,7 +40,6 @@ export const Container = styled.body`
   }
   
   body {
-    position: absolute;
     .pato {
       -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.48); 
       box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.48);
@@ -49,8 +48,13 @@ export const Container = styled.body`
       h1 {
         font-family: 'Montserrat', sans-serif;
         height: 700;
-        font-size: 0.77rem;
-  
+        font-size: 0.77rem;  
+        
+      }
+
+      .title {
+        
+        margin-left: 4.5rem;
       }
 
       >p{
@@ -58,31 +62,8 @@ export const Container = styled.body`
         height: 500;
         font-size: 0.7rem;
         margin: 1rem 4.5rem;
-      }
-      
-      .agentInfo {
-        display: flex;
-        .image {
-          z-index: 2;
-          position: relative;
-          left:-50px;
-        }
-        h1 {
-          font-family: 'Montserrat', sans-serif;
-          height: 700;
-          font-size: 1rem;
-          color: rgba(31, 35, 38, 1);
-          
-        }
-  
-        .information {
-  
-
-  
-        }
-      }
+      }    
     }
-
   }
 
   @media (max-width: 600px) {

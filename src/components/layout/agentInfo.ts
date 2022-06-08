@@ -13,20 +13,45 @@ export const Credentials = styled.p`
   font-size: 0.77rem;
   font-family: 'Montserrat', sans-serif;
   margin-right: 1rem;
- 
 `
 
 export const Information = styled.p`
   font-size: 0.77rem;
   font-family: 'Montserrat', sans-serif;
+`
 
+export const AgentInformation = styled.div`     
+  padding: 5px;
+  h1 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    height: 700;
+    font-size: 1rem;
+    color: rgba(31, 35, 38, 1);  
+    margin: 1.5rem 0 2rem 23rem;      
+  }
+     
+  img {
+    padding: 5px;
+    z-index: 2;
+    position: relative;
+    left:-50px;
+    top: -190px;
+    margin-bottom: -10rem;
+  }      
+
+  .information {
+    position: relative;
+    display: flex;
+    margin-left: 23rem;
+    margin-top: 1rem;
+    
+  }
 `
 
 export const Abilities = styled.div`
   display: flex;
-  .ability {
-      
-      
+  .ability { 
       display: grid;
       grid-template-columns: repeat(1fr, 4);
       gap: 2rem;
@@ -77,11 +102,7 @@ export const Abilities = styled.div`
   @media(max-width: 600px) {
     div {
       top: -30px;
-      
       display: absolute;
-      
-
-      
     }
     
   }

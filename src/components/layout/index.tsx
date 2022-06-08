@@ -5,7 +5,7 @@ import tailWindImg from '../../assets/tailWind.svg'
 import bladeStormImg from '../../assets/bladeStorm.svg'
 import jettImg from './jett.png'
 
-import { Abilities, Credentials, Information, Jett } from './agentInfo';
+import { Abilities, AgentInformation, Credentials, Information, Jett } from './agentInfo';
 import { Container } from "./styles";
 import { Weapons } from '../weapons'
 
@@ -15,25 +15,20 @@ export function Layout() {
       <strong className='jettLogo'>JETT</strong>
       <body>
         <div className="pato">
-          <h1>Lore and Storyline</h1>
+          <h1 className='title'>Lore and Storyline</h1>
           <p className='mobile'>In Valorant lore, Jett is an agile agent expert in the art of evasion. She overwhelms enemies and wounds them with a blade without them knowing her position.</p>
           <p className='desktop'>Of Korean origin, Jett is an agile fighter who gives priority to movement. Her abilities focus on stealth with jumps that allow her to reach high ledges, teleportation, and smoke bombs. Her ultimate ability gives her kunaïs that inflict moderate to heavy damage, remaining very accurate even when she moves.</p>
           <p className='desktop'>There are a total of six groups of weapons that players will be able to purchase at the start of each round with each costing a different amount based on their power and weapon type. None of the weapons are tied exclusively to a specific character, so players will be able to use any of the weapons available in the FPS, no matter the character they are using for a particular match. </p>
 
-          <div className="agentInfo">
-            <div className="image">
-              <img src={agentsInCombatImg} alt="imagem do agente em combate" />
-            </div>
+          <AgentInformation>
             <h1>Agents Information</h1>
             <div className="information">
               <Credentials>
                 <p>Name: </p>
               </Credentials>
-
               <Information>
                 <p>Jett</p>
               </Information>
-
             </div>
 
             <div className="information">
@@ -65,8 +60,8 @@ export function Layout() {
                 <p>Blade Storm</p>
               </Information>
             </div>
-
-          </div>
+            <img src={agentsInCombatImg} alt="imagem do agente em combate" />
+          </AgentInformation>
 
         </div>
 
