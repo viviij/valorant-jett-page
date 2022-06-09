@@ -10,21 +10,26 @@ export function Header() {
   return (
     <Container>
       <Nav>
-        <i className='nav'><img src={riotImg} alt="icone riot" /></i>
-        <div className='range nav' />
-        <i className='nav valorant'><img src={valorantImg} alt="icone valorant" /></i>
+        <nav>
+          <ul>
+            <li><i className='nav valorant'><img src={valorantImg} alt="icone valorant" /></i></li>
+            <div className='range nav' />
+            <li><i className='nav'><img src={riotImg} alt="icone riot" /></i></li>
 
-        <div className='nav'><a href="#">navegacao</a></div>
-        <div className='nav'><a href="#">navegacao</a></div>
-        <div className='nav'><a href="#">navegacao</a></div>
-        <div className='nav'><a href="#">navegacao</a></div>
-        <div className='nav'><a href="#">navegacao</a></div>
-        <div className='profile'><i>
-          <img src={profileImg} alt="foto de perfil" />
-        </i><NickName>Aurelion</NickName>
+            <li><a href="#">navegacao</a></li>
+            <li><a href="#">navegacao</a></li>
+            <li><a href="#">navegacao</a></li>
+            <li><a href="#">navegacao</a></li>
+            <li><a href="#">navegacao</a></li>
+          </ul>
 
-        </div>
-        <div className="toggle"><a href="#"><img src={menuImg} alt="icone do menu" /></a></div>
+          <div className="profile">
+            <li><img src={profileImg} alt="foto de perfil" /></li>
+            <li><NickName>Aurelion</NickName></li>
+          </div>
+          <div className="toggle"><a href="#"><img src={menuImg} alt="icone do menu" /></a></div>
+        </nav>
+
       </Nav>
       <div className="range2" />
 

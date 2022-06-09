@@ -1,56 +1,32 @@
 import styled from "styled-components";
 
 export const Nav = styled.div`
-    
-    display:flex;
-    gap: 1rem;
-    justify-content: space-between;
     position: absolute;
     margin-left: 3rem;
+    
 
-    .nav a {
-      font-family:'Montserrat', sans-serif;
-      font-weight: 700;
-      margin: 1.4rem;
-      text-decoration: none;
-      color: var(--text-header-color);
-      transition: 0.4s;
-      &:hover{
-        filter: opacity(0.9);
-        border-bottom: 1px solid white;
-      }
+    nav ul, .logo, .nav, .profile{
+      display: flex;
+      align-items: center;
     }
 
-    .nav {
-      margin: 1rem auto;
-    }
-
-    .toggle {
-      display: none;
-      margin-top: 0.5rem;
-    }
-
-    .range {
-      border-left: 1px solid rgba(255, 70, 86, 1);
-      height: 1.6rem;
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
     }
 
     .profile {
-      img {
-        top: 0.5rem;
-        position: relative;
-        margin-left: 10rem;
-        cursor: pointer;
-      }
-      }
-
+      justify-content: end;
+    }
 `
 
 export const NickName = styled.text`
   color: var(--text-header-color);
   font-family: 'Montserrat', sans-serif;
   height: 700;
-  top: -0.3rem;
+
   position: relative;
 
   transition: 0.5s;
@@ -68,7 +44,7 @@ export const NickName = styled.text`
 `
 
 export const Container = styled.header`
-  max-width: 1360px;
+  max-width: 100vw;
   z-index: 10;
   position: fixed;
   max-height: 60px;
