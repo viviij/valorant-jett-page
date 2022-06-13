@@ -47,6 +47,39 @@ export const AgentInformation = styled.div`
     margin-top: 1rem;
     
   }
+
+  @media (max-width: 600px) {
+    margin-left: 2rem;
+    .information {
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      margin-top: 0.3rem;
+    }
+
+    h1 {
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      height: 700;
+      font-size: 1rem;
+      color: rgba(31, 35, 38, 1);  
+      margin: 0;     
+      margin-bottom: 1rem;
+    }
+
+    img {
+      padding: 0;
+      z-index: 2;
+      position: relative;
+      left:0;
+      top: 0;
+      margin-bottom: 0;
+
+      height: 200px;
+      width: 300px;
+      overflow: hidden;
+    }
+  }
 `
 
 export const Abilities = styled.div`
@@ -100,10 +133,6 @@ export const Abilities = styled.div`
     
   }
   @media(max-width: 600px) {
-    div {
-      top: -30px;
-      display: absolute;
-    }
-    
+    display: none;
   }
 `

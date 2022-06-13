@@ -1,25 +1,11 @@
 import styled from "styled-components";
 
-export const Nav = styled.div`
+export const Nav = styled.header`
     position: absolute;
-    margin-left: 3rem;
+    margin: 0 2rem;
     
 
-    nav ul, .logo, .nav, .profile{
-      display: flex;
-      align-items: center;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-    }
-
-    .profile {
-      justify-content: end;
-    }
+    
 `
 
 export const NickName = styled.text`
@@ -44,47 +30,65 @@ export const NickName = styled.text`
 `
 
 export const Container = styled.header`
-  max-width: 100vw;
   z-index: 10;
   position: fixed;
-  max-height: 60px;
   background-color: var(--header-color);
+  max-width: 100vw;
+  max-height: 60px;
   width: 100%;
   height: 100%;
+  
+  transition: 0.5s;
+  nav, nav ul, .logo, .nav, .profile, .toggle{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+  }
+
+  nav ul .toggle div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  nav ul li .title{
+    margin-left: 2rem;
+  }
+
+  .toggle {
+    display: flex;
+    position: relative;
+    margin-left: 0%;
+
+  }
+
+  .profile {
+    justify-content: end;
+  }
   @media (max-width: 600px) {
-    max-width: 600px;
-    .nav {
+    nav ul{
       display: none;
     }
-    .toggle {
-      margin: 1rem 1rem 1rem 18rem;
-      display: unset;
-      position: relative;
-      
-    }
-    .valorant {
-      display: unset;
-      img {
-        top: -5px;
-        left: -45px;
-        position: relative;
-        height: 2.25rem;
-        width: 2.25rem;
-      }
-    }
+
     .range {
-      display: unset;
       position: relative;
-      left: 2.0625rem;
-      border-right: 1px solid;
-      height: 1.6rem;
+      border: 1px solid white;
+      height: 30px;
     }
-    .profile {
-      position: absolute;
+
+    nav .toggle {
+      display: flex;   
+      margin-left: 60%;
+      cursor: pointer;
       
-      left: -6.375rem;
-      justify-content: flex-start;
     }
+    
   }
 
 `;

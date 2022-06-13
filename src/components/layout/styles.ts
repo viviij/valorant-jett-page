@@ -4,9 +4,7 @@ import styled from "styled-components";
 export const Container = styled.body`
   position: absolute;
 
-  width: 700px;
-  height: 350px;
-  
+  width: 700px;  
   margin: 96px 0 48px 80px;
 
   .Jett {
@@ -67,48 +65,37 @@ export const Container = styled.body`
   }
 
   @media (max-width: 600px) {
-    margin: 6rem 1rem 2rem 5rem;
-    width: 300px;
+    margin: 96px 0 48px 40px;
+    max-width: 100px;
 
-    position: absolute;
     .Jett, .jettLogo {
       display: none;
     }
-    .mobile {
-      margin: 3rem;
-    }
+    
     .desktop {
       display: none;
     }
     body {
-      .agents {
-        .image{
-          filter: opacity(0);
-          visibility: hidden;
+      margin: 0;
+      padding: 0;
+      max-width: 300px;
+      width: 300px;
+
+      .pato {
+        .title {
+          margin: 0;
+          margin-left: 2.3rem;
+          padding: 1rem 0 1rem 0;
         }
-        .agentInfo {
-          h1 {
-            
-            z-index: 7;
-            position: absolute;
-            top: 260px;
-            left: -116px;       
-            
-          }
-          .information {
-            
-            z-index: 5;
-            display: flex;
-            position: relative;
-            top: -110px;
-            left: -30px;
-            
-            margin: 1rem 1rem 1rem 5rem;
-  
-            margin-right: 1rem;
-            }
-          }      
+
+        >p {
+          margin: 0;
+          margin-left: 2.4rem;
+          margin-bottom: 1rem;
         }
-      } 
+      }
+        
+    }
+      
   }
 `
